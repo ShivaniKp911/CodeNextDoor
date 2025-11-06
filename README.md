@@ -1,2 +1,4 @@
-# CodeNextDoor
-In this repo I just code for fun or to uplift my mood sometimes. This is a collection on easy react projects.
+# 🌈 CodeNextDoor
+
+Welcome to my happy place 💻✨  
+This repo is where I code for fun — no goals, no pressure, just small projects that make me smile or help me unwind.
