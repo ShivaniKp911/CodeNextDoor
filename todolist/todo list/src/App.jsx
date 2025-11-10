@@ -4,18 +4,14 @@ import "./App.css";
 
 function App() {
   const [task, setTask] = useState("");
-  const [taskList, setTaskList] = useState([{ id: 0, task: "" }]);
+  const [taskList, setTaskList] = useState([]);
   const handleChange = (e) => {
     setTask(e.target.value);
   };
   const handleAddTask = () => {
-    const newList = taskList;
-    newList.map((item) => {
-      item.id = newList.length + 1;
-      item.task = task;
-    });
-    console.log(newList);
-    setTaskList(newList);
+    const addedItem = { id: taskList.length + 1, task: task };
+
+    setTaskList([...taskList, addedItem]);
   };
 
   return (
@@ -23,6 +19,7 @@ function App() {
       <h1>Todo List App</h1>
       <input
         name="task"
+        value={task}
         style={{ width: "200px", height: "100px", border: "1px  solid #ccc" }}
         onChange={handleChange}
       />
